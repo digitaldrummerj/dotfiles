@@ -68,7 +68,7 @@ The profile uses GitHub Gist for syncing across machines. You'll need a personal
    SetEnv 'GITHUB_GIST_TOKEN' 'your-token-here'
    ```
 
-### 3. Update Gist ID (For Your Own Gist)
+### 2. Update Gist ID (For Your Own Gist)
 
 Edit `~/.config/powershell/modules/config.ps1` and update the gist ID to your own:
 
@@ -76,7 +76,18 @@ Edit `~/.config/powershell/modules/config.ps1` and update the gist ID to your ow
 $script:GistId = "your-gist-id-here"
 ```
 
-### 4. Install Dependencies
+Set Up GitHub Private Gist Id (Required for Sync) to hold your Powershell modules that you want to keep private
+
+1. Create a gist that will hold your private modules
+2. Grab the Gist Id
+3. Set the Environment Variable
+
+   ```powershell
+   # From PowerShell, run:
+   SetEnv 'POWERSHELL_PRIVATE_GIST_ID' 'your-gist-id-here'
+   ```
+
+### 3. Install Dependencies
 
 The profile will automatically check for missing dependencies on first run and show install commands:
 
