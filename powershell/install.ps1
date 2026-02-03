@@ -33,7 +33,7 @@ param(
 # CONFIGURATION
 # ================================================================
 
-$script:TargetDir = Join-Path $HOME '.config' 'powershell'
+$script:TargetDir = Split-Path -Parent $PROFILE
 $script:ModulesDir = Join-Path $script:TargetDir 'modules'
 $script:ScriptsDir = Join-Path $script:TargetDir 'scripts'
 $script:CurrentDir = Get-Location
@@ -312,16 +312,11 @@ if (-not $SkipDependencies) {
 # ================================================================
 
 Write-Step "Environment setup..."
-Write-Host ""
 Write-Warning "You need to set the following environment variables:"
-Write-Host "  • GITHUB_GIST_TOKEN - For profile sync (store in Keychain)" -ForegroundColor Yellow
-Write-Host "  • COMPANION_MODULE_DEV_ROOT - Path to companion modules" -ForegroundColor Yellow
-Write-Host "  • OBVIO_DEV_ROOT - Path to Obvio projects" -ForegroundColor Yellow
 Write-Host ""
 Write-Host "After loading the profile, use:" -ForegroundColor Gray
 Write-Host "  SetEnv 'GITHUB_GIST_TOKEN' 'your-token'" -ForegroundColor Cyan
-Write-Host "  SetEnv 'COMPANION_MODULE_DEV_ROOT' '/path/to/companion-modules'" -ForegroundColor Cyan
-Write-Host "  SetEnv 'OBVIO_DEV_ROOT' '/path/to/obvio'" -ForegroundColor Cyan
+Write-Host "  SetEnv 'POWERSHELL_PRIVATE_GIST_ID' 'your-private-gist-id'" -ForegroundColor Cyan
 Write-Host ""
 
 # ================================================================

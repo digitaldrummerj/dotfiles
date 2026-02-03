@@ -19,7 +19,7 @@ $ErrorActionPreference = "Stop"
 
 # Define paths
 $gitRepoPath = $PSScriptRoot
-$activeProfilePath = Join-Path $HOME ".config/powershell"
+$activeProfilePath = Split-Path -Parent $PROFILE
 
 # Files/directories to exclude from copying
 $excludePatterns = @(
