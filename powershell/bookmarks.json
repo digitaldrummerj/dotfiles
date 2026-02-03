@@ -1,0 +1,21 @@
+{
+  "global": {
+    "dl": "~/Downloads",
+    "docs": "~/Documents",
+    "movies": "~/Movies",
+    "downloads": "~/Downloads",
+    "dev": "~/Development",
+    "dnerd": "~/Development/letyournerdbeheard",
+    "dps": "~/Development/letyournerdbeheard/dotfiles/powershell",
+    "dotfiles": "~/Development/letyournerdbeheard/dotfiles",
+    "nerd": "~/"
+  }
+}
+
+
+
+
+
+
+
+

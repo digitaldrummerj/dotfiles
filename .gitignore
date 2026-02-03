@@ -1,0 +1,22 @@
+# Machine-specific files (never sync to Git)
+.sync-state.json
+.ignored-dependencies.json
+
+# Backup directories from profile pull operations
+backup/
+
+# PowerShell session history
+ConsoleHost_history.txt
+
+# Temporary files
+*.tmp
+*.log
+*.swp
+*~
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini

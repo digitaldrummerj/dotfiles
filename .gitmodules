@@ -1,0 +1,3 @@
+[submodule "powershell/private-modules"]
+	path = powershell/private-modules
+	url = https://github.com/digitaldrummerj/powershell-dotnet-private

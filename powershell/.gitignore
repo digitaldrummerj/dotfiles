@@ -1,0 +1,24 @@
+# Machine-specific files (never sync to Git)
+.ignored-dependencies.json
+
+# Backup directories from profile pull operations
+backup/
+
+# Session-level documentation (not synced to gist)
+.copilot/
+
+# PowerShell session history
+ConsoleHost_history.txt
+
+# Temporary files
+*.tmp
+*.log
+*.swp
+*~
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
