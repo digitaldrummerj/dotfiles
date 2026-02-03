@@ -4,7 +4,7 @@
 # Global variables and paths used throughout the profile
 
 # Public gist - contains modules/, scripts/, profile.ps1, theme, bookmarks
-$script:GistId = "caf018f57b9006a00d7aa1866d580e5b"
+$script:GistId = "770986c87a7888db92d30f48ca07e6cd"
 
 # Private gist - contains private-modules/ (optional, requires GITHUB_GIST_TOKEN)
 # Set via environment variable: POWERSHELL_PRIVATE_GIST_ID
