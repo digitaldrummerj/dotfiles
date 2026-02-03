@@ -295,7 +295,7 @@ function Show-GitHelp {
   Write-Host "   g <cmd>                  Git command shortcuts:"
   Write-Host "     a      = add           f      = fetch         m      = merge"
   Write-Host "     b      = branch        i      = init          pl     = pull"
-  Write-Host "     c      = checkout      l      = log           plr    = push --prune"
+  Write-Host "     c      = checkout      l      = log           plr    = pull --prune"
   Write-Host "     cl     = clone         ll     = pretty log    ps     = push"
   Write-Host "     co     = commit        rs     = reset         psu    = push -u origin HEAD"
   Write-Host "     cm     = add + commit (with message).         r      = rebase"
