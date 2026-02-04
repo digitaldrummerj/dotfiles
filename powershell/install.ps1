@@ -227,11 +227,11 @@ if (Test-Path $bookmarksSource) {
 }
 
 # README file
-$readmeSource = Join-Path $script:CurrentDir 'README.md'
-$readmeTarget = Join-Path $script:TargetDir 'README.md'
+$readmeSource = Join-Path $script:CurrentDir '_instructions.md'
+$readmeTarget = Join-Path $script:TargetDir '_instructions.md'
 if (Test-Path $readmeSource) {
     Copy-Item -Path $readmeSource -Destination $readmeTarget -Force
-    Write-Success "Installed: README.md"
+    Write-Success "Installed: _instructions.md"
 }
 
 # Install script (so it's available for future pulls)

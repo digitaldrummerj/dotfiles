@@ -32,7 +32,8 @@ $excludePatterns = @(
     ".DS_Store",
     "Thumbs.db",
     "docs",
-    ".github"
+    ".github".
+    "README.md"
 )
 
 # Determine direction
