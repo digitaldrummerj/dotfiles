@@ -12,6 +12,7 @@ $script:CompanionModules = [ordered]@{
   'ztiles' = @{ Path = 'companion-module-zoom-tiles'; Name = 'Zoom Tiles' }
   'lobs'   = @{ Path = 'companion-module-lynbh-obs'; Name = 'LYNBH OBS' }
   'zosc'   = @{ Path = 'companion-module-zoom-osc-iso'; Name = 'Zoom OSC ISO' }
+  'key'    = @{ Path = 'companion-module-elgato-keylight'; Name = 'Elgato Keylight' }
 }
 
 function Invoke-CompanionAction {
@@ -111,7 +112,7 @@ function Invoke-Companion {
     [string]$Action = 'help',
     
     [Parameter(Position=1)]
-    [ValidateSet('root', 'hdtv', 'wiz', 'ztiles', 'lobs', 'zosc')]
+    [ValidateSet('root', 'hdtv', 'wiz', 'ztiles', 'lobs', 'zosc', 'key')]
     [string]$Module
   )
   

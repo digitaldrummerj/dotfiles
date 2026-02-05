@@ -269,6 +269,7 @@ function Invoke-Git {
     'psu' { git push -u origin HEAD }
     # rebase
     'r' { git rebase $Parameters }
+    'rc' { git pull --recurse-submodules && git submodule update --remote --recursive }
     # reset changes
     'rs' { git reset $Parameters }
     # remote 

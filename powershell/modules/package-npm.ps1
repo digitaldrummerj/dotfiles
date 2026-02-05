@@ -16,10 +16,10 @@
     Alias: n
 .PARAMETER Command
     Short command:
-      i    = install       r    = run [script]    o   = outdated
-      ci   = ci (clean)    s    = start           u   = update
-      d    = run dev       t    = run test
-      b    = run build
+      i    = install       id    = install dev    o   = outdated
+      ci   = ci (clean)    r    = run [script]    u   = update
+      d    = run dev       s    = start
+      b    = run build.    t    = run test
 .PARAMETER Parameters
     Additional parameters passed to npm command
 .EXAMPLE
@@ -48,6 +48,7 @@ function Invoke-Npm {
   switch ($normalizedCommand) {
     'help' { Show-NpmHelp }
     'i'  { npm install $Parameters }
+    'id' { npm install --save-dev $Parameters } 
     'ci' { npm ci $Parameters }
     'd'  { npm run dev $Parameters }
     'b'  { npm run build $Parameters }
